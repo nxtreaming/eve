@@ -1,5 +1,15 @@
 # eve
 
+## 0.47.4
+
+### Patch Changes
+
+- 4264f03: Preserve completed tool results across sequential approval and authorization pauses so resumed model calls do not repeat successful tool executions.
+- fde3161: Ensure the workspace CLI restores missing compiled vendor modules before rebuilding itself.
+- f062299: Slack channels can now handle signed slash command payloads with `onSlashCommand`, including command arguments, actor and channel identity, trigger metadata, and workspace-scoped Slack API access.
+- d87cf40: Add an `onShortcut` hook to the Slack channel for message and global shortcuts. Shortcut handlers receive normalized payload data and workspace-scoped Slack API access.
+- a637227: Keep conversation sessions active when AI Gateway requests require billing setup or hit free-tier model restrictions, so users can resolve the plan limit and retry in the same thread.
+
 ## 0.47.3
 
 ### Patch Changes
